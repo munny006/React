@@ -11,20 +11,21 @@ const singerstyle={
 function App() {
   return (
     <div className="App">
-      <Person></Person>
-      <Person></Person>
+      <Person name="Rubel"></Person>
+      <Person nayka="mahu"></Person>
       <Person></Person>
      
     </div>
   );
 }
 
-function Person(){
+function Person(props){
+  // console.log(props)
     return (
     
-    <div>
-      <h1>Sakib Al Hasan</h1>
-      <p>Munny</p>
+    <div className='person'>
+      <h1>{props.name}</h1>
+      <p>{props.nayka}</p>
     </div>
     
     )
