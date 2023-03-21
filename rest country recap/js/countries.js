@@ -19,4 +19,9 @@ const getCountryHTML = country =>{
         <img src="${country.flags.png}">
     </div>`
 }
+
+
+
+
+
 loadCountries();
