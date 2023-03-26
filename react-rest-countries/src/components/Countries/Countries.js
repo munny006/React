@@ -12,13 +12,13 @@ const Countries = (props) => {
     return (
         <div>
             <h1>Hello From Country : {countries.length}</h1>
-            {
-                countries.map(country => <Country 
-                    country={country}
-                   
-                    
-                    
-                    ></Country>)
+            {/* {
+                countries.map(country =>console.log(country))
+            } */}
+
+{
+                countries.map(country =><Country 
+                    country={country}></Country>)
             }
         </div>
     );
