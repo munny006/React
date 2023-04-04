@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "name": "Basic",
+      "price": 29.99,
+      "description": "Access to basic gym equipment and facilities",
+      "features": ["Treadmill", "Bike", "Weights"]
+    },
+    {
+      "id": 2,
+      "name": "Standard",
+      "price": 49.99,
+      "description": "Access to additional fitness classes and amenities",
+      "features": ["All Basic", "Yoga", "Pool", "Sauna"]
+    },
+    {
+      "id": 3,
+      "name": "Premium",
+      "price": 89.99,
+      "description": "Access to personal training and premium amenities",
+      "features": ["All Standard", "Personal Training", "Nutrition Coaching", "Massage"]
+    }
+  ]
