@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import PriceList from './components/PriceLists/PriceList'
+import DeashBoard from './components/DeashBoard/DeashBoard'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
      <Navbar></Navbar>
       <h1 className='text-7xl text-purple-600'>Hello From Tailwind</h1>
     <PriceList></PriceList>
+    <DeashBoard></DeashBoard>
     </div>
   )
 }
