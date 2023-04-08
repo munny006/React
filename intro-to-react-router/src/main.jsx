@@ -10,6 +10,7 @@ import Contact from './components/Contact/Contact';
 import ABOUT from './components/About/ABOUT';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
+import First from './components/First/First';
 
 
 // const router = createBrowserRouter([
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   path: '/',
   element:<Home></Home>,
   children:[
+    {
+      path:'/',
+      element:<First></First>
+    },
     {
       path:'about',
       element:<ABOUT></ABOUT>
