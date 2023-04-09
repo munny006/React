@@ -13,6 +13,7 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import First from './components/First/First';
 import Friends from './components/Friends/Friends';
+import FriendDetail from './components/FriendDetail/FriendDetail';
 
 
 // const router = createBrowserRouter([
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
 
       
    
+    },
+    {
+      path:'friend/:friendId',
+      element:<FriendDetail></FriendDetail>
     },
     {
       path:'about',
