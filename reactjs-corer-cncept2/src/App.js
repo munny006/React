@@ -18,7 +18,8 @@ function App() {
       {/* <Product name="laptop"price="16000"></Product>
       <Product name="mobile" price="56000"></Product>
       <Product name="Tv"price="6000"></Product> */}
-      <Counter></Counter>
+      {/* <Counter></Counter> */}
+      <ExternalUsers></ExternalUsers>
       
     </div>
   );
@@ -44,6 +45,13 @@ function App() {
       <div>
         <h1>Count :{count} </h1>
         <button onClick={IncreaseCount}>Increase </button>
+      </div>
+    )
+  }
+  function ExternalUsers (){
+    return (
+      <div>
+        <h2>External Users : </h2>
       </div>
     )
   }
