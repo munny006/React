@@ -5,4 +5,12 @@
  4.install firebase :npm install firebase
  5.add config file to your project
  6.danger: do not publish or make firebase config to public by pushing those to github
- 7. go to docs > bulid > authentication > web > get started**/
+ 7. go to docs > build > authentication > web > get started
+ 8.export app from the firebase.config.js file:export default app
+ 9.login.jsx:import getAuth from firebase/auth
+ 10.create const auth = getAuth(app)
+ 11.import googleAuthProvider and create a new provider
+ 12.use signInWithPopUp and pass auth and provider
+ 13.activate sign in method(google,facebook,github)
+ 14.[vite]:change127.0.1 to localhost
+ **/
