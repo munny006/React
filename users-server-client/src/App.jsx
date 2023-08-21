@@ -19,7 +19,8 @@ function App() {
     const name =  form.name.value;
     const email =form.email.value;
     const password =form.password.value;
-    console.log(name,email,password)
+    const user = {name,email,password}
+    console.log(user)
   }
 
   return (
