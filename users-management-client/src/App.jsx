@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 
 function App() {
-const [users,serUsers] = useState([]);
+const [users,setUsers] = useState([]);
 useEffect(()=>{
   fetch('http://localhost:5000/users')
   .then(res =>res.json())
@@ -21,16 +21,19 @@ const handleAddUser = event => {
   const user = {name,email}
   console.log(user);
   fetch('http://localhost:5000/users',{
-      method:'POST',
+      method:'post',
       headers : {
         'content-type' : 'application/json'
 
       },
       body:JSON.stringify(user)
   })
-  .then(res =>res.json())
-  .then(data=>{
-    console.log('inside post response',data)
+  .then(res => res.json())
+  .then(data => {
+    console.log(data);
+    const newUsers = [...users,data]
+    setUsers(newUsers); 
+    form.reset();
   })
 
 }
