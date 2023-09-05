@@ -21,7 +21,7 @@ function App() {
       console.log(data);
       if(data.insertedId){
         alert('Users added successfully');
-        form.reset()
+        form.reset();
       }
     })
 

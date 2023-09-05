@@ -33,12 +33,14 @@ async function run() {
     const database = client.db("usersDB");
     const userCollection = database.collection("users");
 
+    //read data
     app.get('/users',async(req,res) =>{
       const cursor = userCollection.find()
       const result = await cursor.toArray();
       res.send(result)
     });
 
+    //delete data
     app.delete('/users/:id',async(req,res) => {
       const id = req.params.id;
       console.log('Please delete from database',id);
@@ -49,8 +51,17 @@ async function run() {
 
     })
 
+    //updated data
+    app.get('/users/:id',async(req,res) => {
+      const id = req.params.id;   
+      const query = {_id : new  ObjectId(id)}  
+      const user = await userCollection.findOne(query);
+      res.send(user);
+
+    })
 
 
+//inserted data
     app.post('/users', async(req,res) => {
       const user = req.body;
       console.log('new user',user);
